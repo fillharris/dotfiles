@@ -170,6 +170,9 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 # keybindings for different actions: #
 ######################################
 
+# start flameshot
+bindsym $mod+Shift+s exec flameshot gui
+
 # start a terminal
 bindsym $mod+Return exec xfce4-terminal
 
