@@ -31,7 +31,7 @@ ShowInstallerIsoInfo() {
 }
 
 
-alias ls='ls --color=auto'
+alias ls='exa -al --color=always --group-directories-first'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
 
@@ -95,3 +95,7 @@ neofetch
 # alias pacdiff=eos-pacdiff
 ################################################################################
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
